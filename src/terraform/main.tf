@@ -21,6 +21,9 @@ provider "aws" {
   profile = "terraform-aws-pessoal"
 }
 
-module "rancher" {
-  source = "./modules/rancher"
+module "rancher_k8s" {
+  source = "./modules/rancher_k8s"
+
+  git_user  = var.git_user
+  git_token = var.git_token
 }

@@ -7,7 +7,7 @@ resource "aws_instance" "k8s" {
   key_name               = var.key_name
   ebs_optimized          = true
 
-  user_data = data.template_cloudinit_config.rancher_k8s.rendered
+  user_data = data.template_cloudinit_config.rancher_k8s_just_docker_install.rendered
   lifecycle {
     ignore_changes = [user_data]
   }
@@ -40,7 +40,7 @@ resource "aws_instance" "rancher_server" {
   key_name               = var.key_name
   ebs_optimized          = true
 
-  user_data = data.template_cloudinit_config.rancher_k8s.rendered
+  user_data = data.template_cloudinit_config.rancher_k8s_install.rendered
   lifecycle {
     ignore_changes = [user_data]
   }
