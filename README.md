@@ -28,7 +28,7 @@ It's a repository with code to deploy a Rancher Server with 3 Nodes K8s using Te
 
 # Target
 
-This project was thought to resolve the time issue. Set up whole environment to study about Rancher and k8s in AWS takes a lot of time. So, I made this flow to automate the first setting up and save your time in your study
+This project was thought to resolve the time issue. Setting up the whole environment to study Rancher and Kubernetes in AWS takes a lot of time. So, I made this flow to automate the initial setup and save your time in your study.
 
 ## Diagram
 
